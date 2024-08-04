@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/location_pin"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Phone Number Input -->
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:drawableStart="@drawable/phone"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Remember Me and Forget Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"/>
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget password?"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginStart="100dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- Sign Up Button -->
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign_up"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+</ScrollView>
